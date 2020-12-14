@@ -22,3 +22,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('gifts', [Gifts::class, "index"]);
 Route::post('gifts', [Gifts::class, "store"]);
+Route::delete('gifts/{gift}', [Gifts::class, "destroy"]);
