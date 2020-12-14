@@ -9,7 +9,6 @@ class Gifts extends Controller
 {
     public function index()
     {
-        // get all aircraft
         return GiftModel::all();
     }
 
@@ -25,5 +24,12 @@ class Gifts extends Controller
     {
         $gift->delete();
         return response(null, 204);
+    }
+
+    public function update(Request $request, GiftModel $gift)
+    {
+        $data = $request->all();
+        $gift->fill($data)->save();
+        return $gift;
     }
 }
