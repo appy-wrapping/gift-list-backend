@@ -24,7 +24,7 @@ class FriendRequest extends FormRequest
     public function rules()
     {
         return [
-            "name" => ["required", "string", "max:80"],
+            "name" => ["required", "string", "max:50"],
             "budget" => ["required", "numeric"]
         ];
     }

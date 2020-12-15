@@ -22,7 +22,7 @@ To GET all the gifts available use:
 
 This should return for each gift:
 - id
-- item_name
+- item_name 
 - price
 - bought
 <br><br>
@@ -32,8 +32,8 @@ To POST a gift use:
 `http://homestead.test/api/gifts`
 
 You need to pass:
-- item_name
-- price
+- item_name (string)
+- price (number)
 <br><br>
 
 ## PATCH a gift
@@ -41,8 +41,8 @@ To PATCH a gift use:
 `http://homestead.test/api/gifts/{giftID}`
 
 You need to pass:
-- item_name
-- price
+- item_name (string)
+- price (number)
 <br><br>
 
 ## DELETE a gift
@@ -91,8 +91,8 @@ To POST a gift use:
 `http://homestead.test/api/friends`
 
 You need to pass:
-- name
-- budget
+- name (string)
+- budget (number)
 <br><br>
 
 ## PATCH a friend
@@ -100,8 +100,8 @@ To PATCH a friend use:
 `http://homestead.test/api/friends/{friendID}`
 
 You need to pass:
-- name
-- budget
+- name (string)
+- budget (number)
 <br><br>
 
 ## DELETE a friend
