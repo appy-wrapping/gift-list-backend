@@ -10,7 +10,7 @@ class GiftModel extends Model
 {
     use HasFactory;
 
-    protected $fillable = ["item_name", "price", "bought"];
+    protected $fillable = ["item_name", "price", "bought", "friend_id"];
 
     public function friend(){
         return $this->belongsTo(Friend::class);

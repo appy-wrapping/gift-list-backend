@@ -11,7 +11,7 @@ class GiftRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize()
+    public function authorize() // allow anyone to interact with the app
     {
         return true;
     }
@@ -26,7 +26,7 @@ class GiftRequest extends FormRequest
         return [
             "item_name" => ["required", "string", "max:80"],
             "price" => ["required", "numeric"],
-            "friend_id" => ["required", "id"],
+            "friend_id" => ["required", "integer"],
         ];
     }
 }

@@ -10,7 +10,9 @@ class Friend extends Model
 {
     use HasFactory;
 
-    public function gifts(){
+    protected $fillable = ["name", "budget"]; // required fields to fill out 
+
+    public function gifts(){ // connect to its gifts
         return $this->hasMany(GiftModel::class);
     }
 }
