@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Friend;
+use App\Http\Requests\API\FriendRequest;
 use App\Http\Resources\API\FriendsResource;
 
 class Friends extends Controller
@@ -13,7 +13,7 @@ class Friends extends Controller
         return FriendsResource::collection(Friend::all());
     }
 
-    public function store(Request $request) // add new friend
+    public function store(FriendRequest $request) // add new friend
     {
         $data = $request->all();
         $friend = Friend::create($data);
@@ -32,7 +32,7 @@ class Friends extends Controller
         return new FriendsResource($friend);
     }
 
-    public function update(Request $request, Friend $friend) //update friend
+    public function update(FriendRequest $request, Friend $friend) //update friend
     {
         $data = $request->all();
         $friend->fill($data)->save();
