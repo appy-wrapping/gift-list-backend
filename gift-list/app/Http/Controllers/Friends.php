@@ -25,4 +25,9 @@ class Friends extends Controller
         $friend->delete();
         return response(null, 204);
     }
+
+    public function show(Friend $friend)
+    {
+        return $friend;
+    }
 }

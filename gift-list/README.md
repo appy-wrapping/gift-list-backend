@@ -63,11 +63,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 ## Tuesday to do list
-- Add GET method for all friends
-- Add GET method for inidividual friend
-- Add GET method for all gifts belonging to friend
-- Add POST method for friend
-- Add DELETE method for friend
 - Add PATCH method for friend
 - Add POST method for budget //patch in friends
 - Add GET method for budget
