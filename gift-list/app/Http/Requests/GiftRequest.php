@@ -25,8 +25,7 @@ class GiftRequest extends FormRequest
     {
         return [
             "item_name" => ["required", "string", "max:80"],
-            "price" => ["required", "numeric"],
-            // "friend_id" => ["required", "integer"],
+            "price" => ["required", "numeric"]
         ];
     }
 }

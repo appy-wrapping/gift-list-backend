@@ -5,17 +5,19 @@ namespace App\Http\Controllers;
 use App\Models\GiftModel;
 use App\Http\Requests\GiftRequest;
 use App\Models\Friend;
+use App\Http\Resources\API\GiftListResource;
 
 class Gifts extends Controller
 {
     public function index(Friend $friend) // return gifts belonging to a specific friend
     {
-        return $friend->gifts;
+        // return $friend->gifts;
+        return GiftListResource::collection($friend->gifts);
     }
 
-    public function indexAll() // return all gifts
+    public function indexAll() // return all gifts, using GiftListResource to format the data as we want it
     {
-        return GiftModel::all();
+        return GiftListResource::collection(GiftModel::all());
     }
 
     public function store(GiftRequest $request, Friend $friend)  // save new gift
@@ -28,7 +30,6 @@ class Gifts extends Controller
         $gift = new GiftModel($data);
         $gift->friend()->associate($friend);
         $gift->save();
-        // $gift->friend_id = $friend;
 
         return $gift;
     }
