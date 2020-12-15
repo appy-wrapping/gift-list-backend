@@ -18,10 +18,17 @@ class Gifts extends Controller
         return GiftModel::all();
     }
 
-    public function store(GiftRequest $request)  // save new gift
+    public function store(GiftRequest $request, Friend $friend)  // save new gift
     {
-        $data = $request->all();
-        $gift = GiftModel::create($data);
+        $data = $request->only([
+            'item_name',
+            'price'
+        ]);
+        
+        $gift = new GiftModel($data);
+        $gift->friend()->associate($friend);
+        $gift->save();
+        // $gift->friend_id = $friend;
 
         return $gift;
     }
@@ -39,3 +46,20 @@ class Gifts extends Controller
         return $gift;
     }
 }
+
+// public function store(Request $request, Owner $owner)
+// {
+//     $animal_data = $request->only(['name',
+//     'type',
+//     'dob',
+//     'mass',
+//     'height',
+//     'biteyness'
+//     ]);
+
+//     $animal = new Animal($animal_data);
+//     $animal->owner()->associate($owner);
+//     $animal->save();
+        
+//     return $animal;
+// }

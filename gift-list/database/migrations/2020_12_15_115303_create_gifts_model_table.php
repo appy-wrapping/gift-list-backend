@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateGiftModelsTable extends Migration
+class CreateGiftsModelTable extends Migration
 {
     /**
      * Run the migrations.
@@ -18,7 +18,10 @@ class CreateGiftModelsTable extends Migration
             $table->timestamps();
             $table->string('item_name', 80);
             $table->float('price');
-            $table->boolean('bought');
+            $table->boolean('bought')->default(false);
+            $table->foreignId("friend_id")
+            ->constrained()
+            ->onDelete("cascade");
         });
     }
 

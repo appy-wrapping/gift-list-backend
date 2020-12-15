@@ -26,8 +26,15 @@ class Friends extends Controller
         return response(null, 204);
     }
 
-    public function show(Friend $friend)
+    public function show(Friend $friend) // return individual friend
     {
+        return $friend;
+    }
+
+    public function update(Request $request, Friend $friend) //update friend
+    {
+        $data = $request->all();
+        $friend->fill($data)->save();
         return $friend;
     }
 }
