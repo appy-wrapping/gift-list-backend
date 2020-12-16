@@ -18,7 +18,7 @@
 # Gifts
 ## GET all gifts
 To GET all the gifts available use:
-`http://homestead.test/api/gifts`
+`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/api/gifts`
 
 This should return for each gift:
 - id
@@ -29,7 +29,7 @@ This should return for each gift:
 
 ## POST a gift
 To POST a gift use:
-`http://homestead.test/api/gifts`
+`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/api/gifts`
 
 You need to pass:
 - item_name (string)
@@ -38,7 +38,7 @@ You need to pass:
 
 ## PATCH a gift
 To PATCH a gift use:
-`http://homestead.test/api/gifts/{giftID}`
+`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/api/gifts/{giftID}`
 
 You need to pass:
 - item_name (string)
@@ -47,7 +47,7 @@ You need to pass:
 
 ## DELETE a gift
 To DELETE a gift use:
-`http://homestead.test/api/gifts/{giftID}`
+`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/api/gifts/{giftID}`
 
 You will receive a 204 when successfully deleted.
 <br><br><br>
@@ -57,7 +57,7 @@ You will receive a 204 when successfully deleted.
 # Friend
 ## GET all Friends
 To GET all the friends available use:
-`http://homestead.test/api/friends`
+`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/api/friends`
 
 This should return for each friend:
 -id
@@ -67,7 +67,7 @@ This should return for each friend:
 
 ## GET a specific friend
 To GET a specific friend use:
-`http://homestead.test/api/friends/{friend_id}`
+`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/friends/{friend_id}`
 
 This shoudl return for each friend:
 -id
@@ -77,7 +77,7 @@ This shoudl return for each friend:
 
 ## GET all gifts belonging to one friend
 to GET all the gifts belonging to a specific friend use;
-`http://homestead.test/api/friends/{friend_id}/gifts`
+`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/api/friends/{friend_id}/gifts`
 
 This should return for each gift:
 -id
@@ -88,7 +88,7 @@ This should return for each gift:
 
 ## POST a friend
 To POST a gift use:
-`http://homestead.test/api/friends`
+`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/api/friends`
 
 You need to pass:
 - name (string)
@@ -106,6 +106,6 @@ You need to pass:
 
 ## DELETE a friend
 To DELETE a friend use:
-`http://homestead.test/api/friend/{friendID}`
+`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/api/friend/{friendID}`
 
 You will receive a 204 when successfully deleted.
