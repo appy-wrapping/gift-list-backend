@@ -97,7 +97,7 @@ You need to pass:
 
 ## PATCH a friend
 To PATCH a friend use:
-`http://homestead.test/api/friends/{friendID}`
+`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/api/friends/{friendID}`
 
 You need to pass:
 - name (string)
