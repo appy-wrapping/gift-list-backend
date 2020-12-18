@@ -18,7 +18,7 @@
 # Gifts
 ## GET all gifts
 To GET all the gifts available use:
-`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/api/gifts`
+`https://appy-wrapping.developme.space/api/gifts`
 
 This should return for each gift:
 - id
@@ -29,7 +29,7 @@ This should return for each gift:
 
 ## POST a gift
 To POST a gift use:
-`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/api/gifts`
+`https://appy-wrapping.developme.space/api/gifts`
 
 You need to pass:
 - item_name (string)
@@ -47,7 +47,7 @@ You need to pass:
 
 ## DELETE a gift
 To DELETE a gift use:
-`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/api/gifts/{giftID}`
+`https://appy-wrapping.developme.space/api/gifts/{giftID}`
 
 You will receive a 204 when successfully deleted.
 <br><br><br>
@@ -57,7 +57,7 @@ You will receive a 204 when successfully deleted.
 # Friend
 ## GET all Friends
 To GET all the friends available use:
-`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/api/friends`
+`https://appy-wrapping.developme.space/api/friends`
 
 This should return for each friend:
 -id
@@ -67,7 +67,7 @@ This should return for each friend:
 
 ## GET a specific friend
 To GET a specific friend use:
-`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/friends/{friend_id}`
+`https://appy-wrapping.developme.space/api/friends/{friend_id}`
 
 This shoudl return for each friend:
 -id
@@ -77,7 +77,7 @@ This shoudl return for each friend:
 
 ## GET all gifts belonging to one friend
 to GET all the gifts belonging to a specific friend use;
-`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/api/friends/{friend_id}/gifts`
+`https://appy-wrapping.developme.space/api/friends/{friend_id}/gifts`
 
 This should return for each gift:
 -id
@@ -97,7 +97,7 @@ You need to pass:
 
 ## PATCH a friend
 To PATCH a friend use:
-`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/api/friends/{friendID}`
+`https://appy-wrapping.developme.space/api/friends/{friendID}`
 
 You need to pass:
 - name (string)
@@ -106,6 +106,6 @@ You need to pass:
 
 ## DELETE a friend
 To DELETE a friend use:
-`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/api/friend/{friendID}`
+`https://appy-wrapping.developme.space/api/friend/{friendID}`
 
 You will receive a 204 when successfully deleted.
