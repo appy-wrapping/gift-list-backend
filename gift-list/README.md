@@ -38,7 +38,7 @@ You need to pass:
 
 ## PATCH a gift
 To PATCH a gift use:
-`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/api/gifts/{giftID}`
+`https://appy-wrapping.developme.space/api/gifts/{giftID}`
 
 You need to pass:
 - item_name (string)
@@ -88,7 +88,7 @@ This should return for each gift:
 
 ## POST a friend
 To POST a gift use:
-`http://ec2-35-178-213-148.eu-west-2.compute.amazonaws.com/api/friends`
+`https://appy-wrapping.developme.space/api/friends`
 
 You need to pass:
 - name (string)
