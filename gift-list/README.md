@@ -1,4 +1,13 @@
-# Restful API: Christmas Shopping List
+# [Appy-Wrapping](https://nelboh.github.io/gift-tracker-app/?v) <br>
+![GitHub repo size](https://img.shields.io/github/repo-size/appy-wrapping/gift-tracker-app-front?logo=GitHub&style=for-the-badge) <br>
+An application created by a collaboration between four cohort members of the Develop Me bootcamp. We were given 5 days to complete an application of our choosing that used both a front-end and back-end. This application stores a list of gifts, their price, and a “bought” boolean in the backend, as well as the name of the friend the user is buying gifts for and the budget. The React front-end allows the users to interact with the database. The backend is hosted on AWS whilst the frontend was deployed on Github pages.
+
+## How to Use [Appy-Wrapping](https://nelboh.github.io/gift-tracker-app/?v)
+Go onto the [webiste](https://nelboh.github.io/gift-tracker-app/?v) and set your friend's name, and the budget you have to spend on them. Write the name of a gift and how much it costs. Press the green plus button to add it to the list. Once you buy the present, click on the red cross on the right, and it will turn into a tick, making it easy for you to track which presents have been bought and which haven't. If you run over the budget the total cost will turn red, letting you know that you have some hard choices ahead, but don't worry, because you can modify and delete your entries. <br>
+![gif demoing app](appyWrappingDemo.gif)
+
+
+# Restful API: Appy Wrapping Christmas Shopping List App
 
 - [Restful API: Christmas Shopping List](#restful-api-christmas-shopping-list)
 - [Gifts](#gifts)
