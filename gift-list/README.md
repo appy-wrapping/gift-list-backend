@@ -1,5 +1,5 @@
 # [Appy-Wrapping](https://nelboh.github.io/gift-tracker-app/?v) <br>
-![GitHub repo size](https://img.shields.io/github/repo-size/appy-wrapping/gift-tracker-app-front?logo=GitHub&style=for-the-badge) <br>
+![GitHub repo size](https://img.shields.io/github/repo-size/appy-wrapping/gift-list-backend?logo=GitHub&style=for-the-badge) <br>
 An application created by a collaboration between four cohort members of the Develop Me bootcamp. We were given 5 days to complete an application of our choosing that used both a front-end and back-end. This application stores a list of gifts, their price, and a “bought” boolean in the backend, as well as the name of the friend the user is buying gifts for and the budget. The React front-end allows the users to interact with the database. The backend is hosted on AWS whilst the frontend was deployed on Github pages.
 
 ## How to Use [Appy-Wrapping](https://nelboh.github.io/gift-tracker-app/?v)
